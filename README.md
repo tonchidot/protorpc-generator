@@ -5,6 +5,10 @@ If you install through [MacPorts](http://www.macports.org/), then this should be
 
     $ sudo port install protobuf-cpp protobuf-pythonVERSION # protobuf-python25, protobuf-python26 or protobuf-python27
 
+Note that the installation seems broken, so google.protobuf.compiler cannot be imported because of a missing file. You can create it with this command:
+
+    $ sudo python -c 'import os, google.protobuf; open("%s/compiler/__init__.py"%google.protobuf.__path__[0], "w");'
+
 ## How to generate the example service
 Running the following:
 
