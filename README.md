@@ -14,7 +14,7 @@ Note that the installation seems broken, so google.protobuf.compiler cannot be i
 ## How to generate the example service
 Running the following:
 
-    $ ./proto2rpc hello.proto
+    $ cd example && ../bin/proto2rpc hello.proto
 
 ...will create these source files:
 
