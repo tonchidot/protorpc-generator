@@ -97,27 +97,30 @@ class ProtoRPCServiceGenerator(object):
 			"",
 		]
 	def genService(self, x, t=0):
-		lines=[
-			"%sclass %s(remote.Service):"%("\t"*t, x.name),
-			'%s\t"""'%("\t"*t),
-			'%s\tUsage:'%("\t"*t),
-			'%s\t\trpc_service_handlers = service_handlers.service_mapping(['%("\t"*t),
-			"%s\t\t\t('/%s', %s.new_factory(implementation=%sImpl(parameters...)),"%("\t"*t, x.name, x.name, x.name),
-			'%s\t\t])'%("\t"*t),
-			'%s\t\t'%("\t"*t),
-			'%s\t\t...then implement %sImpl accordingly:'%("\t"*t, x.name),
-			'%s\t\t'%("\t"*t),
-			'%s\t\tfrom rpc_services.hello import HelloRequest, HelloResponse, HelloService'%("\t"*t),
-			'%s\t\tclass HelloServiceImpl(object):'%("\t"*t),
-			'%s\t\t\tdef __init__(self, template):'%("\t"*t),
-			'%s\t\t\t\tself.template = template'%("\t"*t),
-			'%s\t\t\tdef hello(self, request):'%("\t"*t),
-			'%s\t\t\t\treturn HelloResponse(hello=self.template%%request.my_name)'%("\t"*t),
-			'%s\t\t'%("\t"*t),
-			'%s\t"""'%("\t"*t),
-			"%s\tdef __init__(self, implementation):"%("\t"*t),
-			"%s\t\tself.implementation = implementation"%("\t"*t),
-			"",
+		lines=["""
+%(tabs)sclass %(class)s(remote.Service):
+%(tabs)s	\"\"\"
+%(tabs)s	Usage:
+%(tabs)s		rpc_service_handlers = service_handlers.service_mapping([
+%(tabs)s			('/%(class)s', %(class)s.new_factory(implementation=%(class)sImpl(parameters...)),
+%(tabs)s		])
+%(tabs)s		
+%(tabs)s	...then implement %(class)sImpl accordingly:
+%(tabs)s	
+%(tabs)s		from gen_rpc_services import hello
+%(tabs)s		class HelloServiceImpl(object):
+%(tabs)s			def __init__(self, template):
+%(tabs)s				self.template = template
+%(tabs)s			def hello(self, request):
+%(tabs)s				return hello.HelloResponse(hello=self.template%%request.my_name)
+%(tabs)s		
+%(tabs)s	\"\"\"
+%(tabs)s	def __init__(self, implementation):
+%(tabs)s		self.implementation = implementation
+"""%{
+	'tabs':'\t'*t,
+	'class':x.name,
+}
 		]
 		for xx in x.method:
 			lines+=self.genMethod(xx, t+1)

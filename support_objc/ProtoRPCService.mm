@@ -11,14 +11,9 @@
 @implementation ProtoRPCService
 @synthesize connection, baseUrl, name;
 
-- (id)init {
-    self = [super init];
-    return self;
-}
-
-- initWithConnection:(NSObject<ProtoRPCConnection> *)connection_
-             baseUrl:(NSURL *)baseUrl_
-                name:(NSString *)name_ {
+- (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection_
+                    baseUrl:(NSURL *)baseUrl_
+                       name:(NSString *)name_ {
     if (self = [super init]) {
         self.connection = connection_;
         self.baseUrl    = baseUrl_;

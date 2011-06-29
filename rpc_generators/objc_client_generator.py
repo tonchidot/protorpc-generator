@@ -38,17 +38,17 @@ class ObjCClientGenerator(object):
 				header_lines+=[
 					"""
 @interface %s : ProtoRPCService
-- initWithConnection:(NSObject<ProtoRPCConnection> *)connection
-             baseUrl:(NSURL *)baseUrl;
+- (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection
+                    baseUrl:(NSURL *)baseUrl;
 """%service_class
 				]
 				source_lines+=[
 					"""
 @implementation %s
-- initWithConnection:(NSObject<ProtoRPCConnection> *)connection_
-baseUrl:(NSURL *)baseUrl_ {
-    self = [super initWithConnection:connection_ baseUrl:baseUrl_ name:@%s];
-    return self;
+- (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection_
+                    baseUrl:(NSURL *)baseUrl_ {
+	self = [super initWithConnection:connection_ baseUrl:baseUrl_ name:@%s];
+	return self;
 }
 """%(service_class,service_class)
 				]
@@ -56,14 +56,18 @@ baseUrl:(NSURL *)baseUrl_ {
 					input_t = method.input_type.replace('.', '::')
 					output_t = method.output_type.replace('.', '::')
 					header_lines+=[
-						"- (void) %s:(const %s *)request success:(void (^)(const %s *))success error:(void (^)(NSError *))failure;"%(method.name, input_t, output_t)
+						"""- (void) %s:(const %s *)request
+	success:(void (^)(const %s *))success
+	error:(void (^)(NSError *))failure;"""%(method.name, input_t, output_t)
 					]
 					source_lines+=[
-						"""- (void) %s:(const %s *)request success:(void (^)(const %s *))success error:(void (^)(NSError *))failure {
-	[self.connection invoke:[self urlForMethod:@%s]
+						"""- (void) %(method)s:(const %(in)s *)request
+	success:(void (^)(const %(out)s *))success
+	error:(void (^)(NSError *))failure {
+	[self.connection invoke:[self urlForMethod:@%(method)s]
 		serializedProtocolBuffer:[NSData dataWithProtocolBuffer:request]
 		success:^(NSData* data) {
-			%s response;
+			%(out)s response;
 			if ([data parseProtocolBuffer:&response])
 				success(&response);
 			else
@@ -73,7 +77,7 @@ baseUrl:(NSURL *)baseUrl_ {
 			failure(error);
 		}
 	];
-}"""%(method.name, input_t, output_t, method.name, output_t)
+}"""%{'method':method.name, 'in':input_t, 'out':output_t}
 					]
 				header_lines+=[ "@end" ]
 				source_lines+=[ "@end" ]

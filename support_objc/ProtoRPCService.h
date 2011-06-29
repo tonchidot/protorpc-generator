@@ -24,7 +24,7 @@ enum ProtoRPCErrorCode {
 @property(nonatomic, retain) NSURL* baseUrl;
 @property(nonatomic, retain) NSString* name;
 
-- initWithConnection:(NSObject<ProtoRPCConnection> *)connection
+- (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection
              baseUrl:(NSURL *)baseUrl
                 name:(NSString *)name;
 - (NSURL *) urlForMethod:(NSString *)method;
