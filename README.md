@@ -21,3 +21,13 @@ Running the following:
     gen_rpc_services:
         __init__.py  hello.py
 
+## Testing the example service
+Assuming you running app.yaml on port 8081,
+
+    $ echo "my_name:'$USER'" | \
+        protoc --encode=hello.HelloRequest hello.proto | \
+        curl 2>/dev/null -H 'content-type:application/x-google-protobuf' \
+            --data-binary @- http://localhost:8081/rpc/HelloService.hello | \
+        protoc --decode=hello.HelloResponse hello.proto
+    hello: "Hey, hello jcayzac!"
+
