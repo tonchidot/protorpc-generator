@@ -59,7 +59,7 @@ class ObjCClientGenerator(object):
 - (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection_
                     baseUrl:(NSURL *)baseUrl_ {
 	// Initialize parent
-	self = [super initWithConnection:connection_ baseUrl:baseUrl_ name:@%s];
+	self = [super initWithConnection:connection_ baseUrl:baseUrl_ name:@"%s"];
 	return self;
 }
 """%(service_class,service_class)
@@ -92,7 +92,7 @@ class ObjCClientGenerator(object):
 	// serialize the request as a protocol buffer,
 	// transmit it asynchronously and have 'success'
 	// and 'failure' blocks called upon success or failure.
-	[self.connection invoke:[self urlForMethod:@%(method)s]
+	[self.connection invoke:[self urlForMethod:@"%(method)s"]
 		serializedProtocolBuffer:[NSData dataWithProtocolBuffer:request]
 		success:^(NSData* data) {
 			%(out)s response;
