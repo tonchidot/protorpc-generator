@@ -36,9 +36,9 @@ enum ProtoRPCErrorCode {
 /// @param connection An object that implements the {ProtoRPCConnection} protocol.
 /// @param baseUrl    Base URL for accessing remotes services (e.g. "https://around.me:8080/rpc")
 /// @param name       Name of the service. Currently it is the same as the service's class name.
-- (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection
-                    baseUrl:(NSURL *)baseUrl
-                       name:(NSString *)name;
+- (id) initWithConnection:(NSObject<ProtoRPCConnection> *)connection
+                  baseUrl:(NSURL *)baseUrl
+                     name:(NSString *)name;
 
 /// @brief Returns an URL for the specified remote method of the service.
 /// @param method Remote method name.

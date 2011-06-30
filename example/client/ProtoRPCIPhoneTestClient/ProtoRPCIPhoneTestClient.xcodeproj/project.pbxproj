@@ -18,6 +18,20 @@
 		541E0D4A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */; };
 		541E0D4D13BC6C5600143FB3 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */; };
 		541E0D6313BC764800143FB3 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D6213BC764800143FB3 /* GHUnitIOS.framework */; };
+		541E0D6A13BC7A1800143FB3 /* hello.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D6513BC7A1800143FB3 /* hello.pb.cc */; };
+		541E0D6B13BC7A1800143FB3 /* hello.rpc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D6913BC7A1800143FB3 /* hello.rpc.mm */; };
+		541E152013BC7DF300143FB3 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E134B13BC7DF100143FB3 /* extension_set.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E152513BC7DF300143FB3 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135213BC7DF100143FB3 /* generated_message_util.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E152613BC7DF300143FB3 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135513BC7DF100143FB3 /* coded_stream.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E152E13BC7DF300143FB3 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136313BC7DF100143FB3 /* zero_copy_stream.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E153013BC7DF300143FB3 /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E153413BC7DF300143FB3 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136D13BC7DF100143FB3 /* message_lite.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E153813BC7DF300143FB3 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137413BC7DF100143FB3 /* repeated_field.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E153B13BC7DF300143FB3 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137A13BC7DF100143FB3 /* common.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E153D13BC7DF300143FB3 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137F13BC7DF100143FB3 /* once.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E155F13BC7DF300143FB3 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E15CC13BC83A600143FB3 /* NSData+ProtocolBuffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E15C813BC83A600143FB3 /* NSData+ProtocolBuffers.mm */; };
+		541E15CD13BC83A600143FB3 /* ProtoRPCService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +52,37 @@
 		541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProtoRPCIPhoneTestClientAppDelegate_iPad.m; path = iPad/ProtoRPCIPhoneTestClientAppDelegate_iPad.m; sourceTree = "<group>"; };
 		541E0D4C13BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		541E0D6213BC764800143FB3 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
+		541E0D6513BC7A1800143FB3 /* hello.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hello.pb.cc; sourceTree = "<group>"; };
+		541E0D6613BC7A1800143FB3 /* hello.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hello.pb.h; sourceTree = "<group>"; };
+		541E0D6813BC7A1800143FB3 /* hello.rpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hello.rpc.h; sourceTree = "<group>"; };
+		541E0D6913BC7A1800143FB3 /* hello.rpc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hello.rpc.mm; sourceTree = "<group>"; };
+		541E134B13BC7DF100143FB3 /* extension_set.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extension_set.cc; sourceTree = "<group>"; };
+		541E134C13BC7DF100143FB3 /* extension_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extension_set.h; sourceTree = "<group>"; };
+		541E135213BC7DF100143FB3 /* generated_message_util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generated_message_util.cc; sourceTree = "<group>"; };
+		541E135313BC7DF100143FB3 /* generated_message_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generated_message_util.h; sourceTree = "<group>"; };
+		541E135513BC7DF100143FB3 /* coded_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coded_stream.cc; sourceTree = "<group>"; };
+		541E135613BC7DF100143FB3 /* coded_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream.h; sourceTree = "<group>"; };
+		541E135713BC7DF100143FB3 /* coded_stream_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream_inl.h; sourceTree = "<group>"; };
+		541E136313BC7DF100143FB3 /* zero_copy_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream.cc; sourceTree = "<group>"; };
+		541E136413BC7DF100143FB3 /* zero_copy_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream.h; sourceTree = "<group>"; };
+		541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream_impl_lite.cc; sourceTree = "<group>"; };
+		541E136813BC7DF100143FB3 /* zero_copy_stream_impl_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream_impl_lite.h; sourceTree = "<group>"; };
+		541E136D13BC7DF100143FB3 /* message_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message_lite.cc; sourceTree = "<group>"; };
+		541E136E13BC7DF100143FB3 /* message_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_lite.h; sourceTree = "<group>"; };
+		541E137413BC7DF100143FB3 /* repeated_field.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = repeated_field.cc; sourceTree = "<group>"; };
+		541E137513BC7DF100143FB3 /* repeated_field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = repeated_field.h; sourceTree = "<group>"; };
+		541E137A13BC7DF100143FB3 /* common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cc; sourceTree = "<group>"; };
+		541E137B13BC7DF100143FB3 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		541E137F13BC7DF100143FB3 /* once.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = once.cc; sourceTree = "<group>"; };
+		541E138013BC7DF100143FB3 /* once.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = once.h; sourceTree = "<group>"; };
+		541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wire_format_lite.cc; sourceTree = "<group>"; };
+		541E13AF13BC7DF100143FB3 /* wire_format_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite.h; sourceTree = "<group>"; };
+		541E13B013BC7DF100143FB3 /* wire_format_lite_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite_inl.h; sourceTree = "<group>"; };
+		541E15C713BC83A600143FB3 /* NSData+ProtocolBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ProtocolBuffers.h"; sourceTree = "<group>"; };
+		541E15C813BC83A600143FB3 /* NSData+ProtocolBuffers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSData+ProtocolBuffers.mm"; sourceTree = "<group>"; };
+		541E15C913BC83A600143FB3 /* ProtoRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoRPCConnection.h; sourceTree = "<group>"; };
+		541E15CA13BC83A600143FB3 /* ProtoRPCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoRPCService.h; sourceTree = "<group>"; };
+		541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtoRPCService.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +103,10 @@
 		541E0D1F13BC6C5600143FB3 = {
 			isa = PBXGroup;
 			children = (
+				541E15C613BC83A600143FB3 /* support_objc */,
+				541E117C13BC7DF000143FB3 /* protobuf-current */,
+				541E0D6413BC7A1800143FB3 /* gen_rpc_client_cpp */,
+				541E0D6713BC7A1800143FB3 /* gen_rpc_client_objc */,
 				541E0D3413BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */,
 				541E0D2D13BC6C5600143FB3 /* Frameworks */,
 				541E0D2B13BC6C5600143FB3 /* Products */,
@@ -124,6 +173,106 @@
 				541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		541E0D6413BC7A1800143FB3 /* gen_rpc_client_cpp */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D6513BC7A1800143FB3 /* hello.pb.cc */,
+				541E0D6613BC7A1800143FB3 /* hello.pb.h */,
+			);
+			path = gen_rpc_client_cpp;
+			sourceTree = "<group>";
+		};
+		541E0D6713BC7A1800143FB3 /* gen_rpc_client_objc */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D6813BC7A1800143FB3 /* hello.rpc.h */,
+				541E0D6913BC7A1800143FB3 /* hello.rpc.mm */,
+			);
+			path = gen_rpc_client_objc;
+			sourceTree = "<group>";
+		};
+		541E117C13BC7DF000143FB3 /* protobuf-current */ = {
+			isa = PBXGroup;
+			children = (
+				541E12E613BC7DF100143FB3 /* src */,
+			);
+			path = "protobuf-current";
+			sourceTree = "<group>";
+		};
+		541E12E613BC7DF100143FB3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				541E12E713BC7DF100143FB3 /* google */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		541E12E713BC7DF100143FB3 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				541E12E813BC7DF100143FB3 /* protobuf */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		541E12E813BC7DF100143FB3 /* protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				541E134B13BC7DF100143FB3 /* extension_set.cc */,
+				541E134C13BC7DF100143FB3 /* extension_set.h */,
+				541E135213BC7DF100143FB3 /* generated_message_util.cc */,
+				541E135313BC7DF100143FB3 /* generated_message_util.h */,
+				541E135413BC7DF100143FB3 /* io */,
+				541E136D13BC7DF100143FB3 /* message_lite.cc */,
+				541E136E13BC7DF100143FB3 /* message_lite.h */,
+				541E137413BC7DF100143FB3 /* repeated_field.cc */,
+				541E137513BC7DF100143FB3 /* repeated_field.h */,
+				541E137913BC7DF100143FB3 /* stubs */,
+				541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */,
+				541E13AF13BC7DF100143FB3 /* wire_format_lite.h */,
+				541E13B013BC7DF100143FB3 /* wire_format_lite_inl.h */,
+			);
+			path = protobuf;
+			sourceTree = "<group>";
+		};
+		541E135413BC7DF100143FB3 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				541E135513BC7DF100143FB3 /* coded_stream.cc */,
+				541E135613BC7DF100143FB3 /* coded_stream.h */,
+				541E135713BC7DF100143FB3 /* coded_stream_inl.h */,
+				541E136313BC7DF100143FB3 /* zero_copy_stream.cc */,
+				541E136413BC7DF100143FB3 /* zero_copy_stream.h */,
+				541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */,
+				541E136813BC7DF100143FB3 /* zero_copy_stream_impl_lite.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		541E137913BC7DF100143FB3 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				541E137A13BC7DF100143FB3 /* common.cc */,
+				541E137B13BC7DF100143FB3 /* common.h */,
+				541E137F13BC7DF100143FB3 /* once.cc */,
+				541E138013BC7DF100143FB3 /* once.h */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+		541E15C613BC83A600143FB3 /* support_objc */ = {
+			isa = PBXGroup;
+			children = (
+				541E15C713BC83A600143FB3 /* NSData+ProtocolBuffers.h */,
+				541E15C813BC83A600143FB3 /* NSData+ProtocolBuffers.mm */,
+				541E15C913BC83A600143FB3 /* ProtoRPCConnection.h */,
+				541E15CA13BC83A600143FB3 /* ProtoRPCService.h */,
+				541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */,
+			);
+			name = support_objc;
+			path = ../../../support_objc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +342,20 @@
 				541E0D3F13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m in Sources */,
 				541E0D4313BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m in Sources */,
 				541E0D4A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m in Sources */,
+				541E0D6A13BC7A1800143FB3 /* hello.pb.cc in Sources */,
+				541E0D6B13BC7A1800143FB3 /* hello.rpc.mm in Sources */,
+				541E152013BC7DF300143FB3 /* extension_set.cc in Sources */,
+				541E152513BC7DF300143FB3 /* generated_message_util.cc in Sources */,
+				541E152613BC7DF300143FB3 /* coded_stream.cc in Sources */,
+				541E152E13BC7DF300143FB3 /* zero_copy_stream.cc in Sources */,
+				541E153013BC7DF300143FB3 /* zero_copy_stream_impl_lite.cc in Sources */,
+				541E153413BC7DF300143FB3 /* message_lite.cc in Sources */,
+				541E153813BC7DF300143FB3 /* repeated_field.cc in Sources */,
+				541E153B13BC7DF300143FB3 /* common.cc in Sources */,
+				541E153D13BC7DF300143FB3 /* once.cc in Sources */,
+				541E155F13BC7DF300143FB3 /* wire_format_lite.cc in Sources */,
+				541E15CC13BC83A600143FB3 /* NSData+ProtocolBuffers.mm in Sources */,
+				541E15CD13BC83A600143FB3 /* ProtoRPCService.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +401,7 @@
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -253,6 +417,7 @@
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -274,6 +439,10 @@
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/protobuf-config",
+					"$(SRCROOT)/protobuf-current/src",
+				);
 				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -298,6 +467,10 @@
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/protobuf-config",
+					"$(SRCROOT)/protobuf-current/src",
+				);
 				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",

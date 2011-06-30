@@ -1,3 +1,12 @@
+// client uses protobuf-lite, so we want to generate compatible code
+option optimize_for = LITE_RUNTIME;
+
+// Turn off legacy RPC code generation
+// (which was not compatible with the Lite runtime anyway)
+option cc_generic_services = false;
+option java_generic_services = false;
+option py_generic_services = false;
+
 // protoc-gen-rpc requires packages
 package hello;
 

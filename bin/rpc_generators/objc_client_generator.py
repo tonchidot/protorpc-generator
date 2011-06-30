@@ -49,14 +49,14 @@ class ObjCClientGenerator(object):
 /// @brief Initialize a new %(service)s object.
 /// @param connection An object that implements the {ProtoRPCConnection} protocol
 /// @param baseUrl    Base URL for accessing remotes services (e.g. "https://around.me:8080/rpc")
-- (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection
+- (id) initWithConnection:(NSObject<ProtoRPCConnection> *)connection
                     baseUrl:(NSURL *)baseUrl;
 """%{'service':service_class}
 				]
 				source_lines+=[
 					"""\
 @implementation %s
-- (void) initWithConnection:(NSObject<ProtoRPCConnection> *)connection_
+- (id) initWithConnection:(NSObject<ProtoRPCConnection> *)connection_
                     baseUrl:(NSURL *)baseUrl_ {
 	// Initialize parent
 	self = [super initWithConnection:connection_ baseUrl:baseUrl_ name:@"%s"];
