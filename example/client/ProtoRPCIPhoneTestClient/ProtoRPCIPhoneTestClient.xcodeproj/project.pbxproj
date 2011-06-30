@@ -17,6 +17,7 @@
 		541E0D4613BC6C5600143FB3 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D4413BC6C5600143FB3 /* MainWindow_iPhone.xib */; };
 		541E0D4A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */; };
 		541E0D4D13BC6C5600143FB3 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */; };
+		541E0D6313BC764800143FB3 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D6213BC764800143FB3 /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		541E0D4813BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProtoRPCIPhoneTestClientAppDelegate_iPad.h; path = iPad/ProtoRPCIPhoneTestClientAppDelegate_iPad.h; sourceTree = "<group>"; };
 		541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProtoRPCIPhoneTestClientAppDelegate_iPad.m; path = iPad/ProtoRPCIPhoneTestClientAppDelegate_iPad.m; sourceTree = "<group>"; };
 		541E0D4C13BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		541E0D6213BC764800143FB3 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 				541E0D2F13BC6C5600143FB3 /* UIKit.framework in Frameworks */,
 				541E0D3113BC6C5600143FB3 /* Foundation.framework in Frameworks */,
 				541E0D3313BC6C5600143FB3 /* CoreGraphics.framework in Frameworks */,
+				541E0D6313BC764800143FB3 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 		541E0D2D13BC6C5600143FB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				541E0D6213BC764800143FB3 /* GHUnitIOS.framework */,
 				541E0D2E13BC6C5600143FB3 /* UIKit.framework */,
 				541E0D3013BC6C5600143FB3 /* Foundation.framework */,
 				541E0D3213BC6C5600143FB3 /* CoreGraphics.framework */,
@@ -231,7 +235,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
@@ -246,7 +250,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
@@ -261,10 +265,21 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
 				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lgcov",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,9 +290,20 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
 				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lgcov",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -303,6 +329,7 @@
 				541E0D5213BC6C5600143FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
