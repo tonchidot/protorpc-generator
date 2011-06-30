@@ -1,0 +1,32 @@
+// protoc-gen-rpc requires packages
+package hello;
+
+// Example request message
+message HelloRequest {
+	required string my_name = 1;
+}
+
+// Example response message
+message HelloResponse {
+	required string hello = 1;
+}
+
+// Example RPC service
+service HelloService {
+	// Example method
+	rpc hello(HelloRequest) returns (HelloResponse);
+}
+
+// Quick test of server side:
+// 
+// $ echo '{"my_name":"Julien"}' | \
+// curl 2>/dev/null -H 'content-type:application/json' \
+// --data-binary @- http://localhost:8081/HelloService.hello
+// {"hello": "Hey, hello Julien!"}
+// 
+// $ echo 'my_name:"Julien"' | \
+// protoc --encode=hello.HelloRequest hello.proto | \
+// curl 2>/dev/null -H 'content-type:application/x-google-protobuf' \
+// --data-binary @- http://localhost:8081/HelloService.hello | \
+// protoc --decode=hello.HelloResponse hello.proto
+// hello: "Hey, hello Julien!"

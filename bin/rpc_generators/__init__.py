@@ -1,4 +1,5 @@
-#/usr/env/bin python
+#!/usr/bin/env python
+# coding=UTF-8
 from google.protobuf.compiler.plugin_pb2 import CodeGeneratorRequest, CodeGeneratorResponse
 from protorpc_service_generator import ProtoRPCServiceGenerator
 from objc_client_generator import ObjCClientGenerator
