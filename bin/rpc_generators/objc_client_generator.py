@@ -75,7 +75,7 @@ class ObjCClientGenerator(object):
 /// @param failure A block that will be called in case of failure.
 - (void) %(name)s:(const %(in)s *)request
 	success:(void (^)(const %(out)s *))success
-	error:(void (^)(NSError *))failure;\
+	error:(void (^)(NSError *))failure;
 """%{
 	'service':service.name,
 	'name':method.name,
@@ -105,7 +105,8 @@ class ObjCClientGenerator(object):
 			failure(error);
 		}
 	];
-}"""%{
+}
+"""%{
 	'service':service.name,
 	'method':method.name,
 	'in':input_t,
