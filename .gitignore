@@ -1,5 +1,6 @@
 *.pyc
 *.pyo
 *.swp
+xcuserdata
 gen_rpc_*
 

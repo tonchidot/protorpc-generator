@@ -14,18 +14,23 @@ Note that the installation seems broken, so google.protobuf.compiler cannot be i
 ## How to generate the example service
 Running the following:
 
-    $ cd example && ../bin/proto2rpc hello.proto
+    $ cd example/app
+    $ protoc --plugin=../../bin/protoc-gen-rpc --rpc_out=py:. hello.proto
 
 ...will create these source files:
 
-    gen_rpc_client_cpp:
-        hello.pb.cc  hello.pb.h
-    
-    gen_rpc_client_objc:
-        hello.rpc.h  hello.rpc.mm
-    
     gen_rpc_services:
         __init__.py  hello.py
+
+## How to generate the example client
+Run the following:
+
+    $ cd example/client/ProtoRPCIPhoneTestClient
+    $ mkdir -p gen_rpc_client_cpp
+    $ protoc --plugin=../../../bin/protoc-gen-rpc --rpc_out=objc:. --cpp_out=gen_rpc_client_cpp hello.proto
+    $ open ProtoRPCIPhoneTestClient.xcodeproj
+
+Then build the project in Xcode.
 
 ## Testing the example service
 Assuming you running app.yaml on port 8081,

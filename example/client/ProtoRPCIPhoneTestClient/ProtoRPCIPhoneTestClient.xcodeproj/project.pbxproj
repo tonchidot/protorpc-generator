@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541E0D2F13BC6C5600143FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D2E13BC6C5600143FB3 /* UIKit.framework */; };
+		541E0D3113BC6C5600143FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D3013BC6C5600143FB3 /* Foundation.framework */; };
+		541E0D3313BC6C5600143FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D3213BC6C5600143FB3 /* CoreGraphics.framework */; };
+		541E0D3913BC6C5600143FB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D3713BC6C5600143FB3 /* InfoPlist.strings */; };
+		541E0D3C13BC6C5600143FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D3B13BC6C5600143FB3 /* main.m */; };
+		541E0D3F13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D3E13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m */; };
+		541E0D4313BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D4213BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m */; };
+		541E0D4613BC6C5600143FB3 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D4413BC6C5600143FB3 /* MainWindow_iPhone.xib */; };
+		541E0D4A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */; };
+		541E0D4D13BC6C5600143FB3 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		541E0D2A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtoRPCIPhoneTestClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541E0D2E13BC6C5600143FB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		541E0D3013BC6C5600143FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		541E0D3213BC6C5600143FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		541E0D3613BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProtoRPCIPhoneTestClient-Info.plist"; sourceTree = "<group>"; };
+		541E0D3813BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		541E0D3A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProtoRPCIPhoneTestClient-Prefix.pch"; sourceTree = "<group>"; };
+		541E0D3B13BC6C5600143FB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		541E0D3D13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtoRPCIPhoneTestClientAppDelegate.h; sourceTree = "<group>"; };
+		541E0D3E13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtoRPCIPhoneTestClientAppDelegate.m; sourceTree = "<group>"; };
+		541E0D4113BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProtoRPCIPhoneTestClientAppDelegate_iPhone.h; path = iPhone/ProtoRPCIPhoneTestClientAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		541E0D4213BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProtoRPCIPhoneTestClientAppDelegate_iPhone.m; path = iPhone/ProtoRPCIPhoneTestClientAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		541E0D4513BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		541E0D4813BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProtoRPCIPhoneTestClientAppDelegate_iPad.h; path = iPad/ProtoRPCIPhoneTestClientAppDelegate_iPad.h; sourceTree = "<group>"; };
+		541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProtoRPCIPhoneTestClientAppDelegate_iPad.m; path = iPad/ProtoRPCIPhoneTestClientAppDelegate_iPad.m; sourceTree = "<group>"; };
+		541E0D4C13BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541E0D2713BC6C5600143FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E0D2F13BC6C5600143FB3 /* UIKit.framework in Frameworks */,
+				541E0D3113BC6C5600143FB3 /* Foundation.framework in Frameworks */,
+				541E0D3313BC6C5600143FB3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541E0D1F13BC6C5600143FB3 = {
+			isa = PBXGroup;
+			children = (
+				541E0D3413BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */,
+				541E0D2D13BC6C5600143FB3 /* Frameworks */,
+				541E0D2B13BC6C5600143FB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		541E0D2B13BC6C5600143FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D2A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		541E0D2D13BC6C5600143FB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D2E13BC6C5600143FB3 /* UIKit.framework */,
+				541E0D3013BC6C5600143FB3 /* Foundation.framework */,
+				541E0D3213BC6C5600143FB3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		541E0D3413BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D3D13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.h */,
+				541E0D3E13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m */,
+				541E0D4013BC6C5600143FB3 /* iPhone */,
+				541E0D4713BC6C5600143FB3 /* iPad */,
+				541E0D3513BC6C5600143FB3 /* Supporting Files */,
+			);
+			path = ProtoRPCIPhoneTestClient;
+			sourceTree = "<group>";
+		};
+		541E0D3513BC6C5600143FB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D3613BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Info.plist */,
+				541E0D3713BC6C5600143FB3 /* InfoPlist.strings */,
+				541E0D3A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Prefix.pch */,
+				541E0D3B13BC6C5600143FB3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		541E0D4013BC6C5600143FB3 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D4113BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.h */,
+				541E0D4213BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m */,
+				541E0D4413BC6C5600143FB3 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		541E0D4713BC6C5600143FB3 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D4813BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.h */,
+				541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */,
+				541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		541E0D2913BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541E0D5013BC6C5600143FB3 /* Build configuration list for PBXNativeTarget "ProtoRPCIPhoneTestClient" */;
+			buildPhases = (
+				541E0D2613BC6C5600143FB3 /* Sources */,
+				541E0D2713BC6C5600143FB3 /* Frameworks */,
+				541E0D2813BC6C5600143FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtoRPCIPhoneTestClient;
+			productName = ProtoRPCIPhoneTestClient;
+			productReference = 541E0D2A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541E0D2113BC6C5600143FB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "-";
+			};
+			buildConfigurationList = 541E0D2413BC6C5600143FB3 /* Build configuration list for PBXProject "ProtoRPCIPhoneTestClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 541E0D1F13BC6C5600143FB3;
+			productRefGroup = 541E0D2B13BC6C5600143FB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541E0D2913BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		541E0D2813BC6C5600143FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E0D3913BC6C5600143FB3 /* InfoPlist.strings in Resources */,
+				541E0D4613BC6C5600143FB3 /* MainWindow_iPhone.xib in Resources */,
+				541E0D4D13BC6C5600143FB3 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541E0D2613BC6C5600143FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E0D3C13BC6C5600143FB3 /* main.m in Sources */,
+				541E0D3F13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m in Sources */,
+				541E0D4313BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m in Sources */,
+				541E0D4A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		541E0D3713BC6C5600143FB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541E0D3813BC6C5600143FB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		541E0D4413BC6C5600143FB3 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541E0D4513BC6C5600143FB3 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541E0D4C13BC6C5600143FB3 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		541E0D4E13BC6C5600143FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		541E0D4F13BC6C5600143FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		541E0D5113BC6C5600143FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
+				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		541E0D5213BC6C5600143FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
+				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541E0D2413BC6C5600143FB3 /* Build configuration list for PBXProject "ProtoRPCIPhoneTestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541E0D4E13BC6C5600143FB3 /* Debug */,
+				541E0D4F13BC6C5600143FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541E0D5013BC6C5600143FB3 /* Build configuration list for PBXNativeTarget "ProtoRPCIPhoneTestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541E0D5113BC6C5600143FB3 /* Debug */,
+				541E0D5213BC6C5600143FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 541E0D2113BC6C5600143FB3 /* Project object */;
+}
