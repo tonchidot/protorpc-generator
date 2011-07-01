@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Utility command that call all the generators (cpp, objc, py)
+
+BASE="${0%/*}"
+if [ "$BASE" == "$0" ]
+then
+	BASE="$(pwd)"
+fi
+
+mkdir -p gen_rpc_client_cpp && \
+protoc --plugin="${BASE}/protoc-gen-rpc" --rpc_out=. --cpp_out=gen_rpc_client_cpp $@
