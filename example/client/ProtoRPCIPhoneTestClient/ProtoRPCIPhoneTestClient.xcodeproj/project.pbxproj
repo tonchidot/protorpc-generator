@@ -20,16 +20,16 @@
 		541E0D6313BC764800143FB3 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D6213BC764800143FB3 /* GHUnitIOS.framework */; };
 		541E0D6A13BC7A1800143FB3 /* hello.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D6513BC7A1800143FB3 /* hello.pb.cc */; };
 		541E0D6B13BC7A1800143FB3 /* hello.rpc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D6913BC7A1800143FB3 /* hello.rpc.mm */; };
-		541E152013BC7DF300143FB3 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E134B13BC7DF100143FB3 /* extension_set.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E152513BC7DF300143FB3 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135213BC7DF100143FB3 /* generated_message_util.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E152613BC7DF300143FB3 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135513BC7DF100143FB3 /* coded_stream.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E152E13BC7DF300143FB3 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136313BC7DF100143FB3 /* zero_copy_stream.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E153013BC7DF300143FB3 /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E153413BC7DF300143FB3 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136D13BC7DF100143FB3 /* message_lite.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E153813BC7DF300143FB3 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137413BC7DF100143FB3 /* repeated_field.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E153B13BC7DF300143FB3 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137A13BC7DF100143FB3 /* common.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E153D13BC7DF300143FB3 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137F13BC7DF100143FB3 /* once.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
-		541E155F13BC7DF300143FB3 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -D_THREAD_SAFE -I \"$(SRCROOT)/protobuf-config\" -I \"$(SRCROOT)/protobuf-current/src\""; }; };
+		541E152013BC7DF300143FB3 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E134B13BC7DF100143FB3 /* extension_set.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E152513BC7DF300143FB3 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135213BC7DF100143FB3 /* generated_message_util.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E152613BC7DF300143FB3 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135513BC7DF100143FB3 /* coded_stream.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E152E13BC7DF300143FB3 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136313BC7DF100143FB3 /* zero_copy_stream.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153013BC7DF300143FB3 /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153413BC7DF300143FB3 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136D13BC7DF100143FB3 /* message_lite.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153813BC7DF300143FB3 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137413BC7DF100143FB3 /* repeated_field.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153B13BC7DF300143FB3 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137A13BC7DF100143FB3 /* common.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153D13BC7DF300143FB3 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137F13BC7DF100143FB3 /* once.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E155F13BC7DF300143FB3 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
 		541E15CC13BC83A600143FB3 /* NSData+ProtocolBuffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E15C813BC83A600143FB3 /* NSData+ProtocolBuffers.mm */; };
 		541E15CD13BC83A600143FB3 /* ProtoRPCService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */; };
 /* End PBXBuildFile section */
@@ -401,7 +401,7 @@
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/protobuf-current/src";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,7 +417,7 @@
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/protobuf-current/src";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
