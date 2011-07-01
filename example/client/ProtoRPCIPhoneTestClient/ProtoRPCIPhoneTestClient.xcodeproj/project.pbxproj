@@ -328,7 +328,7 @@
 				541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */,
 			);
 			name = support_objc;
-			path = ../../../support_objc;
+			path = support_objc;
 			sourceTree = "<group>";
 		};
 		541E15CE13BD657400143FB3 /* transport */ = {
