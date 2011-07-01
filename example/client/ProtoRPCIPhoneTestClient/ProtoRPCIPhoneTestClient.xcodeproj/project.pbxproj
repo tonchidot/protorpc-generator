@@ -583,6 +583,7 @@
 					"$(SRCROOT)/protobuf-current/src",
 				);
 				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -611,6 +612,7 @@
 					"$(SRCROOT)/protobuf-current/src",
 				);
 				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
