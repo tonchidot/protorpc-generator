@@ -1,4 +1,0 @@
-#!/usr/bin/env python
-from sys import stdin, stdout
-from rpc_generators import generate
-stdout.write(generate(stdin.read()))
