@@ -16,15 +16,31 @@
     DefaultProtoRPCConnection* transport = [[DefaultProtoRPCConnection alloc] init];
     HelloService* service = [[HelloService alloc]
                              initWithConnection:transport
-                             baseUrl:[NSURL URLWithString:@"http://172.16.1.147:8081/rpc"]
+                             baseUrl:[NSURL URLWithString:@"http://julien.local:8081/rpc"]
                              ];
     ::hello::HelloRequest request;
-    request.set_my_name("Julien");
+    NSString* name=[[UIDevice currentDevice] name];
+    __block NSString* expected = [NSString stringWithFormat:@"Hey, hello %@!", name];
+    request.set_my_name([name UTF8String]);
     [service hello:&request
         success:^(const ::hello::HelloResponse* response) {
             GHAssertNotNULL(response, @"Got a NULL response");
-            GHTestLog(@"Got response with .hello=[%s]", response->hello().c_str());
-            [self notify:kGHUnitWaitStatusSuccess forSelector:@selector(testHelloMethod)];
+            NSString* heyHello = [NSString stringWithUTF8String:response->hello().c_str()];
+            GHTestLog(@"Got response with .hello=[%@]", heyHello);
+            if ([heyHello isEqual:expected]) {
+                [self notify:kGHUnitWaitStatusSuccess forSelector:@selector(testHelloMethod)];
+            }
+            else {
+                [self notify:kGHUnitWaitStatusFailure forSelector:@selector(testHelloMethod)];
+            }
+            UIAlertView *alert = [[UIAlertView alloc]
+                                       initWithTitle: nil
+                                       message: heyHello
+                                       delegate:nil
+                                       cancelButtonTitle:@"OK"
+                                       otherButtonTitles:nil];
+            [alert show];
+            [alert release];
         }
         error:^(NSError* error) {
             GHTestLog(@"Error :[%@]", error);
