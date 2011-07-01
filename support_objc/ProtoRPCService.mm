@@ -24,8 +24,9 @@
 
 - (NSURL *) urlForMethod:(NSString *)method {
 	/// This conforms to ProtoRPC way of doing things.
-    return [NSURL URLWithString:[NSString stringWithFormat:@"/%@.%@", self.name, method]
-                  relativeToURL:self.baseUrl];
+    //return [NSURL URLWithString:[NSString stringWithFormat:@"/%@.%@", self.name, method]
+    //              relativeToURL:self.baseUrl];
+    return [self.baseUrl URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@", self.name, method]];
 }
 
 @end
