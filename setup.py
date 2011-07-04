@@ -10,6 +10,6 @@ setup(name='protorpc-generator',
     packages=['rpc_generators'],
     scripts=['bin/protoc-gen-rpc', 'bin/proto2rpc'],
     install_requires=[
-        'protobuf>=2.3.0',
+        'protobuf>=2.4.1',
     ],
     )
