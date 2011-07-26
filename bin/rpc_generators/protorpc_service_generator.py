@@ -109,19 +109,19 @@ class ProtoRPCServiceGenerator(object):
         if x.label == FieldDescriptor.LABEL_REPEATED:
             kwargs += [u'repeated=True']
         if x.default_value:
-            if ProtoRPCServiceGenerator.FIELD_TYPE_MAP[x.type] \
-                == u'BooleanField':
+            value_type = ProtoRPCServiceGenerator.FIELD_TYPE_MAP[x.type]
+            if value_type == 'BooleanField':
                 v = x.default_value.lower()
                 # I don't think '1' or 'yes' are allowed,
                 # but better be safe than sorry
                 if v == u'true' or v == u'1' or v == u'yes':
                     kwargs += [u'default=True']
-            elif ProtoRPCServiceGenerator.FIELD_TYPE_MAP[x.type] \
-                == u'EnumField':
+            elif value_type == 'EnumField':
                 kwargs += [u"default='%s'" % x.default_value]
-            elif ProtoRPCServiceGenerator.FIELD_TYPE_MAP[x.type] \
-                == u'StringField':
+            elif value_type == 'StringField':
                 kwargs += [u"default=%s" % repr(x.default_value)]
+            elif value_type == 'FloatField':
+                kwargs += [u'default=float(%s)' % x.default_value]
             else:
                 kwargs += [u'default=%s' % x.default_value]
         return [u"%s%s = messages.%s(%s%i%s)%s" % (
