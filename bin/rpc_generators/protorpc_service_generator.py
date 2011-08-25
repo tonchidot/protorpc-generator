@@ -42,7 +42,7 @@ class ProtoRPCServiceGenerator(object):
 
     # Maps fields types from google.protobuf to protorpc
     FIELD_TYPE_MAP = {
-        FieldDescriptor.TYPE_DOUBLE: u'IntegerField',
+        FieldDescriptor.TYPE_DOUBLE: u'FloatField',
         FieldDescriptor.TYPE_FLOAT: u'FloatField',
         FieldDescriptor.TYPE_INT64: u'IntegerField',
         FieldDescriptor.TYPE_UINT64: u'IntegerField',
@@ -121,7 +121,10 @@ class ProtoRPCServiceGenerator(object):
             elif value_type == 'StringField':
                 kwargs += [u"default=%s" % repr(x.default_value)]
             elif value_type == 'FloatField':
-                kwargs += [u'default=float(%s)' % x.default_value]
+                if x.type == FieldDescriptor.TYPE_DOUBLE:
+                    kwargs += [u'default=double(%s)' % x.default_value]
+                else:
+                    kwargs += [u'default=float(%s)' % x.default_value]
             else:
                 kwargs += [u'default=%s' % x.default_value]
         return [u"%s%s = messages.%s(%s%i%s)%s" % (
