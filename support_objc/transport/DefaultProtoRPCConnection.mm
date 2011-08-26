@@ -43,22 +43,20 @@ serializedProtocolBuffer:(NSData *)payload
 //    [request shouldWaitToInflateCompressedResponses:NO];
     [request setShouldContinueWhenAppEntersBackground:YES];
     [request setNumberOfTimesToRetryOnTimeout:2];
-    __block protorpc_success_handler_t success_copy = [success copy];
-    __block protorpc_error_handler_t error_copy     = [error copy];
     [request setCompletionBlock:^{
         if ([request responseStatusCode] == 200)
-            success_copy([request responseData]);
+            success([request responseData]);
         else
             // For some reason, a HTTP error is not
             // a "failure"...
-            error_copy(
+            error(
                 [NSError errorWithDomain:@"HTTP"
                                     code:[request responseStatusCode]
                                 userInfo:[request responseHeaders]]
             );
     }];
     [request setFailedBlock:^{
-        error_copy([request error]);
+        error([request error]);
     }];
     [request startAsynchronous];
 }
