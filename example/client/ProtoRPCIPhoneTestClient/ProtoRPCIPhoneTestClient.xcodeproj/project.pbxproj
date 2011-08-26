@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541E0D2F13BC6C5600143FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D2E13BC6C5600143FB3 /* UIKit.framework */; };
+		541E0D3113BC6C5600143FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D3013BC6C5600143FB3 /* Foundation.framework */; };
+		541E0D3313BC6C5600143FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D3213BC6C5600143FB3 /* CoreGraphics.framework */; };
+		541E0D3913BC6C5600143FB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D3713BC6C5600143FB3 /* InfoPlist.strings */; };
+		541E0D3C13BC6C5600143FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D3B13BC6C5600143FB3 /* main.m */; };
+		541E0D3F13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D3E13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m */; };
+		541E0D4313BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D4213BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m */; };
+		541E0D4613BC6C5600143FB3 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D4413BC6C5600143FB3 /* MainWindow_iPhone.xib */; };
+		541E0D4A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */; };
+		541E0D4D13BC6C5600143FB3 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */; };
+		541E0D6313BC764800143FB3 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0D6213BC764800143FB3 /* GHUnitIOS.framework */; };
+		541E0D6A13BC7A1800143FB3 /* hello.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D6513BC7A1800143FB3 /* hello.pb.cc */; };
+		541E0D6B13BC7A1800143FB3 /* hello.rpc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E0D6913BC7A1800143FB3 /* hello.rpc.mm */; };
+		541E152013BC7DF300143FB3 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E134B13BC7DF100143FB3 /* extension_set.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E152513BC7DF300143FB3 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135213BC7DF100143FB3 /* generated_message_util.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E152613BC7DF300143FB3 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E135513BC7DF100143FB3 /* coded_stream.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E152E13BC7DF300143FB3 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136313BC7DF100143FB3 /* zero_copy_stream.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153013BC7DF300143FB3 /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153413BC7DF300143FB3 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E136D13BC7DF100143FB3 /* message_lite.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153813BC7DF300143FB3 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137413BC7DF100143FB3 /* repeated_field.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153B13BC7DF300143FB3 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137A13BC7DF100143FB3 /* common.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E153D13BC7DF300143FB3 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E137F13BC7DF100143FB3 /* once.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E155F13BC7DF300143FB3 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */; settings = {COMPILER_FLAGS = "-I \"$(SRCROOT)/protobuf-config\""; }; };
+		541E15CC13BC83A600143FB3 /* NSData+ProtocolBuffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E15C813BC83A600143FB3 /* NSData+ProtocolBuffers.mm */; };
+		541E15CD13BC83A600143FB3 /* ProtoRPCService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */; };
+		541E15D113BD657400143FB3 /* DefaultProtoRPCConnection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E15D013BD657400143FB3 /* DefaultProtoRPCConnection.mm */; };
+		541E16BA13BD693A00143FB3 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E15FF13BD693900143FB3 /* ASIAuthenticationDialog.m */; };
+		541E16BB13BD693A00143FB3 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E160213BD693900143FB3 /* ASIDataCompressor.m */; };
+		541E16BC13BD693A00143FB3 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E160413BD693900143FB3 /* ASIDataDecompressor.m */; };
+		541E16BD13BD693A00143FB3 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E160613BD693900143FB3 /* ASIDownloadCache.m */; };
+		541E16BE13BD693A00143FB3 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E160813BD693900143FB3 /* ASIFormDataRequest.m */; };
+		541E16BF13BD693A00143FB3 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E160A13BD693900143FB3 /* ASIHTTPRequest.m */; };
+		541E16C013BD693A00143FB3 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E160E13BD693900143FB3 /* ASIInputStream.m */; };
+		541E16C113BD693A00143FB3 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E161013BD693900143FB3 /* ASINetworkQueue.m */; };
+		541E16E113BD693A00143FB3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E165613BD693A00143FB3 /* Reachability.m */; };
+		541E171713BD6A4500143FB3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E171313BD6A4400143FB3 /* CFNetwork.framework */; };
+		541E171813BD6A4500143FB3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E171413BD6A4400143FB3 /* libz.dylib */; };
+		541E171913BD6A4500143FB3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E171513BD6A4500143FB3 /* MobileCoreServices.framework */; };
+		541E171A13BD6A4500143FB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E171613BD6A4500143FB3 /* SystemConfiguration.framework */; };
+		541E172813BD773D00143FB3 /* HelloTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 541E172713BD773D00143FB3 /* HelloTest.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		541E0D2A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtoRPCIPhoneTestClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541E0D2E13BC6C5600143FB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		541E0D3013BC6C5600143FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		541E0D3213BC6C5600143FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		541E0D3613BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProtoRPCIPhoneTestClient-Info.plist"; sourceTree = "<group>"; };
+		541E0D3813BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		541E0D3A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProtoRPCIPhoneTestClient-Prefix.pch"; sourceTree = "<group>"; };
+		541E0D3B13BC6C5600143FB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		541E0D3D13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtoRPCIPhoneTestClientAppDelegate.h; sourceTree = "<group>"; };
+		541E0D3E13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtoRPCIPhoneTestClientAppDelegate.m; sourceTree = "<group>"; };
+		541E0D4113BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProtoRPCIPhoneTestClientAppDelegate_iPhone.h; path = iPhone/ProtoRPCIPhoneTestClientAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		541E0D4213BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProtoRPCIPhoneTestClientAppDelegate_iPhone.m; path = iPhone/ProtoRPCIPhoneTestClientAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		541E0D4513BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		541E0D4813BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProtoRPCIPhoneTestClientAppDelegate_iPad.h; path = iPad/ProtoRPCIPhoneTestClientAppDelegate_iPad.h; sourceTree = "<group>"; };
+		541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProtoRPCIPhoneTestClientAppDelegate_iPad.m; path = iPad/ProtoRPCIPhoneTestClientAppDelegate_iPad.m; sourceTree = "<group>"; };
+		541E0D4C13BC6C5600143FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		541E0D6213BC764800143FB3 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
+		541E0D6513BC7A1800143FB3 /* hello.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hello.pb.cc; sourceTree = "<group>"; };
+		541E0D6613BC7A1800143FB3 /* hello.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hello.pb.h; sourceTree = "<group>"; };
+		541E0D6813BC7A1800143FB3 /* hello.rpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hello.rpc.h; sourceTree = "<group>"; };
+		541E0D6913BC7A1800143FB3 /* hello.rpc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hello.rpc.mm; sourceTree = "<group>"; };
+		541E134B13BC7DF100143FB3 /* extension_set.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extension_set.cc; sourceTree = "<group>"; };
+		541E134C13BC7DF100143FB3 /* extension_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extension_set.h; sourceTree = "<group>"; };
+		541E135213BC7DF100143FB3 /* generated_message_util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generated_message_util.cc; sourceTree = "<group>"; };
+		541E135313BC7DF100143FB3 /* generated_message_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generated_message_util.h; sourceTree = "<group>"; };
+		541E135513BC7DF100143FB3 /* coded_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coded_stream.cc; sourceTree = "<group>"; };
+		541E135613BC7DF100143FB3 /* coded_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream.h; sourceTree = "<group>"; };
+		541E135713BC7DF100143FB3 /* coded_stream_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream_inl.h; sourceTree = "<group>"; };
+		541E136313BC7DF100143FB3 /* zero_copy_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream.cc; sourceTree = "<group>"; };
+		541E136413BC7DF100143FB3 /* zero_copy_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream.h; sourceTree = "<group>"; };
+		541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream_impl_lite.cc; sourceTree = "<group>"; };
+		541E136813BC7DF100143FB3 /* zero_copy_stream_impl_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream_impl_lite.h; sourceTree = "<group>"; };
+		541E136D13BC7DF100143FB3 /* message_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message_lite.cc; sourceTree = "<group>"; };
+		541E136E13BC7DF100143FB3 /* message_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_lite.h; sourceTree = "<group>"; };
+		541E137413BC7DF100143FB3 /* repeated_field.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = repeated_field.cc; sourceTree = "<group>"; };
+		541E137513BC7DF100143FB3 /* repeated_field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = repeated_field.h; sourceTree = "<group>"; };
+		541E137A13BC7DF100143FB3 /* common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cc; sourceTree = "<group>"; };
+		541E137B13BC7DF100143FB3 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		541E137F13BC7DF100143FB3 /* once.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = once.cc; sourceTree = "<group>"; };
+		541E138013BC7DF100143FB3 /* once.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = once.h; sourceTree = "<group>"; };
+		541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wire_format_lite.cc; sourceTree = "<group>"; };
+		541E13AF13BC7DF100143FB3 /* wire_format_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite.h; sourceTree = "<group>"; };
+		541E13B013BC7DF100143FB3 /* wire_format_lite_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite_inl.h; sourceTree = "<group>"; };
+		541E15C713BC83A600143FB3 /* NSData+ProtocolBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ProtocolBuffers.h"; sourceTree = "<group>"; };
+		541E15C813BC83A600143FB3 /* NSData+ProtocolBuffers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSData+ProtocolBuffers.mm"; sourceTree = "<group>"; };
+		541E15C913BC83A600143FB3 /* ProtoRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoRPCConnection.h; sourceTree = "<group>"; };
+		541E15CA13BC83A600143FB3 /* ProtoRPCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoRPCService.h; sourceTree = "<group>"; };
+		541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtoRPCService.mm; sourceTree = "<group>"; };
+		541E15CF13BD657400143FB3 /* DefaultProtoRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultProtoRPCConnection.h; sourceTree = "<group>"; };
+		541E15D013BD657400143FB3 /* DefaultProtoRPCConnection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DefaultProtoRPCConnection.mm; sourceTree = "<group>"; };
+		541E15FE13BD693900143FB3 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		541E15FF13BD693900143FB3 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		541E160013BD693900143FB3 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		541E160113BD693900143FB3 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		541E160213BD693900143FB3 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		541E160313BD693900143FB3 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		541E160413BD693900143FB3 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		541E160513BD693900143FB3 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		541E160613BD693900143FB3 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		541E160713BD693900143FB3 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		541E160813BD693900143FB3 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		541E160913BD693900143FB3 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		541E160A13BD693900143FB3 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		541E160B13BD693900143FB3 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		541E160C13BD693900143FB3 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		541E160D13BD693900143FB3 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		541E160E13BD693900143FB3 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		541E160F13BD693900143FB3 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		541E161013BD693900143FB3 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		541E161113BD693900143FB3 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		541E165513BD693A00143FB3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		541E165613BD693A00143FB3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		541E171313BD6A4400143FB3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		541E171413BD6A4400143FB3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		541E171513BD6A4500143FB3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		541E171613BD6A4500143FB3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		541E172613BD773D00143FB3 /* HelloTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloTest.h; path = Tests/HelloTest.h; sourceTree = "<group>"; };
+		541E172713BD773D00143FB3 /* HelloTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HelloTest.mm; path = Tests/HelloTest.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541E0D2713BC6C5600143FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E171713BD6A4500143FB3 /* CFNetwork.framework in Frameworks */,
+				541E171813BD6A4500143FB3 /* libz.dylib in Frameworks */,
+				541E171913BD6A4500143FB3 /* MobileCoreServices.framework in Frameworks */,
+				541E171A13BD6A4500143FB3 /* SystemConfiguration.framework in Frameworks */,
+				541E0D2F13BC6C5600143FB3 /* UIKit.framework in Frameworks */,
+				541E0D3113BC6C5600143FB3 /* Foundation.framework in Frameworks */,
+				541E0D3313BC6C5600143FB3 /* CoreGraphics.framework in Frameworks */,
+				541E0D6313BC764800143FB3 /* GHUnitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541E0D1F13BC6C5600143FB3 = {
+			isa = PBXGroup;
+			children = (
+				541E172513BD76F100143FB3 /* Tests */,
+				541E15D213BD693900143FB3 /* asi-http-request */,
+				541E15C613BC83A600143FB3 /* support_objc */,
+				541E117C13BC7DF000143FB3 /* protobuf-current */,
+				541E0D6413BC7A1800143FB3 /* gen_rpc_client_cpp */,
+				541E0D6713BC7A1800143FB3 /* gen_rpc_client_objc */,
+				541E0D3413BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */,
+				541E0D2D13BC6C5600143FB3 /* Frameworks */,
+				541E0D2B13BC6C5600143FB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		541E0D2B13BC6C5600143FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D2A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		541E0D2D13BC6C5600143FB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				541E171313BD6A4400143FB3 /* CFNetwork.framework */,
+				541E171413BD6A4400143FB3 /* libz.dylib */,
+				541E171513BD6A4500143FB3 /* MobileCoreServices.framework */,
+				541E171613BD6A4500143FB3 /* SystemConfiguration.framework */,
+				541E0D6213BC764800143FB3 /* GHUnitIOS.framework */,
+				541E0D2E13BC6C5600143FB3 /* UIKit.framework */,
+				541E0D3013BC6C5600143FB3 /* Foundation.framework */,
+				541E0D3213BC6C5600143FB3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		541E0D3413BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D3D13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.h */,
+				541E0D3E13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m */,
+				541E0D4013BC6C5600143FB3 /* iPhone */,
+				541E0D4713BC6C5600143FB3 /* iPad */,
+				541E0D3513BC6C5600143FB3 /* Supporting Files */,
+			);
+			path = ProtoRPCIPhoneTestClient;
+			sourceTree = "<group>";
+		};
+		541E0D3513BC6C5600143FB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D3613BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Info.plist */,
+				541E0D3713BC6C5600143FB3 /* InfoPlist.strings */,
+				541E0D3A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient-Prefix.pch */,
+				541E0D3B13BC6C5600143FB3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		541E0D4013BC6C5600143FB3 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D4113BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.h */,
+				541E0D4213BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m */,
+				541E0D4413BC6C5600143FB3 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		541E0D4713BC6C5600143FB3 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D4813BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.h */,
+				541E0D4913BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m */,
+				541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		541E0D6413BC7A1800143FB3 /* gen_rpc_client_cpp */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D6513BC7A1800143FB3 /* hello.pb.cc */,
+				541E0D6613BC7A1800143FB3 /* hello.pb.h */,
+			);
+			path = gen_rpc_client_cpp;
+			sourceTree = "<group>";
+		};
+		541E0D6713BC7A1800143FB3 /* gen_rpc_client_objc */ = {
+			isa = PBXGroup;
+			children = (
+				541E0D6813BC7A1800143FB3 /* hello.rpc.h */,
+				541E0D6913BC7A1800143FB3 /* hello.rpc.mm */,
+			);
+			path = gen_rpc_client_objc;
+			sourceTree = "<group>";
+		};
+		541E117C13BC7DF000143FB3 /* protobuf-current */ = {
+			isa = PBXGroup;
+			children = (
+				541E12E613BC7DF100143FB3 /* src */,
+			);
+			path = "protobuf-current";
+			sourceTree = "<group>";
+		};
+		541E12E613BC7DF100143FB3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				541E12E713BC7DF100143FB3 /* google */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		541E12E713BC7DF100143FB3 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				541E12E813BC7DF100143FB3 /* protobuf */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		541E12E813BC7DF100143FB3 /* protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				541E134B13BC7DF100143FB3 /* extension_set.cc */,
+				541E134C13BC7DF100143FB3 /* extension_set.h */,
+				541E135213BC7DF100143FB3 /* generated_message_util.cc */,
+				541E135313BC7DF100143FB3 /* generated_message_util.h */,
+				541E135413BC7DF100143FB3 /* io */,
+				541E136D13BC7DF100143FB3 /* message_lite.cc */,
+				541E136E13BC7DF100143FB3 /* message_lite.h */,
+				541E137413BC7DF100143FB3 /* repeated_field.cc */,
+				541E137513BC7DF100143FB3 /* repeated_field.h */,
+				541E137913BC7DF100143FB3 /* stubs */,
+				541E13AE13BC7DF100143FB3 /* wire_format_lite.cc */,
+				541E13AF13BC7DF100143FB3 /* wire_format_lite.h */,
+				541E13B013BC7DF100143FB3 /* wire_format_lite_inl.h */,
+			);
+			path = protobuf;
+			sourceTree = "<group>";
+		};
+		541E135413BC7DF100143FB3 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				541E135513BC7DF100143FB3 /* coded_stream.cc */,
+				541E135613BC7DF100143FB3 /* coded_stream.h */,
+				541E135713BC7DF100143FB3 /* coded_stream_inl.h */,
+				541E136313BC7DF100143FB3 /* zero_copy_stream.cc */,
+				541E136413BC7DF100143FB3 /* zero_copy_stream.h */,
+				541E136713BC7DF100143FB3 /* zero_copy_stream_impl_lite.cc */,
+				541E136813BC7DF100143FB3 /* zero_copy_stream_impl_lite.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		541E137913BC7DF100143FB3 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				541E137A13BC7DF100143FB3 /* common.cc */,
+				541E137B13BC7DF100143FB3 /* common.h */,
+				541E137F13BC7DF100143FB3 /* once.cc */,
+				541E138013BC7DF100143FB3 /* once.h */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+		541E15C613BC83A600143FB3 /* support_objc */ = {
+			isa = PBXGroup;
+			children = (
+				541E15CE13BD657400143FB3 /* transport */,
+				541E15C713BC83A600143FB3 /* NSData+ProtocolBuffers.h */,
+				541E15C813BC83A600143FB3 /* NSData+ProtocolBuffers.mm */,
+				541E15C913BC83A600143FB3 /* ProtoRPCConnection.h */,
+				541E15CA13BC83A600143FB3 /* ProtoRPCService.h */,
+				541E15CB13BC83A600143FB3 /* ProtoRPCService.mm */,
+			);
+			name = support_objc;
+			path = support_objc;
+			sourceTree = "<group>";
+		};
+		541E15CE13BD657400143FB3 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				541E15CF13BD657400143FB3 /* DefaultProtoRPCConnection.h */,
+				541E15D013BD657400143FB3 /* DefaultProtoRPCConnection.mm */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		541E15D213BD693900143FB3 /* asi-http-request */ = {
+			isa = PBXGroup;
+			children = (
+				541E15FD13BD693900143FB3 /* Classes */,
+				541E165113BD693A00143FB3 /* External */,
+			);
+			path = "asi-http-request";
+			sourceTree = "<group>";
+		};
+		541E15FD13BD693900143FB3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				541E15FE13BD693900143FB3 /* ASIAuthenticationDialog.h */,
+				541E15FF13BD693900143FB3 /* ASIAuthenticationDialog.m */,
+				541E160013BD693900143FB3 /* ASICacheDelegate.h */,
+				541E160113BD693900143FB3 /* ASIDataCompressor.h */,
+				541E160213BD693900143FB3 /* ASIDataCompressor.m */,
+				541E160313BD693900143FB3 /* ASIDataDecompressor.h */,
+				541E160413BD693900143FB3 /* ASIDataDecompressor.m */,
+				541E160513BD693900143FB3 /* ASIDownloadCache.h */,
+				541E160613BD693900143FB3 /* ASIDownloadCache.m */,
+				541E160713BD693900143FB3 /* ASIFormDataRequest.h */,
+				541E160813BD693900143FB3 /* ASIFormDataRequest.m */,
+				541E160913BD693900143FB3 /* ASIHTTPRequest.h */,
+				541E160A13BD693900143FB3 /* ASIHTTPRequest.m */,
+				541E160B13BD693900143FB3 /* ASIHTTPRequestConfig.h */,
+				541E160C13BD693900143FB3 /* ASIHTTPRequestDelegate.h */,
+				541E160D13BD693900143FB3 /* ASIInputStream.h */,
+				541E160E13BD693900143FB3 /* ASIInputStream.m */,
+				541E160F13BD693900143FB3 /* ASINetworkQueue.h */,
+				541E161013BD693900143FB3 /* ASINetworkQueue.m */,
+				541E161113BD693900143FB3 /* ASIProgressDelegate.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		541E165113BD693A00143FB3 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				541E165413BD693A00143FB3 /* Reachability */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		541E165413BD693A00143FB3 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				541E165513BD693A00143FB3 /* Reachability.h */,
+				541E165613BD693A00143FB3 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		541E172513BD76F100143FB3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				541E172613BD773D00143FB3 /* HelloTest.h */,
+				541E172713BD773D00143FB3 /* HelloTest.mm */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		541E0D2913BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541E0D5013BC6C5600143FB3 /* Build configuration list for PBXNativeTarget "ProtoRPCIPhoneTestClient" */;
+			buildPhases = (
+				541E0D2613BC6C5600143FB3 /* Sources */,
+				541E0D2713BC6C5600143FB3 /* Frameworks */,
+				541E0D2813BC6C5600143FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtoRPCIPhoneTestClient;
+			productName = ProtoRPCIPhoneTestClient;
+			productReference = 541E0D2A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541E0D2113BC6C5600143FB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "-";
+			};
+			buildConfigurationList = 541E0D2413BC6C5600143FB3 /* Build configuration list for PBXProject "ProtoRPCIPhoneTestClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 541E0D1F13BC6C5600143FB3;
+			productRefGroup = 541E0D2B13BC6C5600143FB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541E0D2913BC6C5600143FB3 /* ProtoRPCIPhoneTestClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		541E0D2813BC6C5600143FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E0D3913BC6C5600143FB3 /* InfoPlist.strings in Resources */,
+				541E0D4613BC6C5600143FB3 /* MainWindow_iPhone.xib in Resources */,
+				541E0D4D13BC6C5600143FB3 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541E0D2613BC6C5600143FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E0D3C13BC6C5600143FB3 /* main.m in Sources */,
+				541E0D3F13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate.m in Sources */,
+				541E0D4313BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPhone.m in Sources */,
+				541E0D4A13BC6C5600143FB3 /* ProtoRPCIPhoneTestClientAppDelegate_iPad.m in Sources */,
+				541E0D6A13BC7A1800143FB3 /* hello.pb.cc in Sources */,
+				541E0D6B13BC7A1800143FB3 /* hello.rpc.mm in Sources */,
+				541E152013BC7DF300143FB3 /* extension_set.cc in Sources */,
+				541E152513BC7DF300143FB3 /* generated_message_util.cc in Sources */,
+				541E152613BC7DF300143FB3 /* coded_stream.cc in Sources */,
+				541E152E13BC7DF300143FB3 /* zero_copy_stream.cc in Sources */,
+				541E153013BC7DF300143FB3 /* zero_copy_stream_impl_lite.cc in Sources */,
+				541E153413BC7DF300143FB3 /* message_lite.cc in Sources */,
+				541E153813BC7DF300143FB3 /* repeated_field.cc in Sources */,
+				541E153B13BC7DF300143FB3 /* common.cc in Sources */,
+				541E153D13BC7DF300143FB3 /* once.cc in Sources */,
+				541E155F13BC7DF300143FB3 /* wire_format_lite.cc in Sources */,
+				541E15CC13BC83A600143FB3 /* NSData+ProtocolBuffers.mm in Sources */,
+				541E15CD13BC83A600143FB3 /* ProtoRPCService.mm in Sources */,
+				541E15D113BD657400143FB3 /* DefaultProtoRPCConnection.mm in Sources */,
+				541E16BA13BD693A00143FB3 /* ASIAuthenticationDialog.m in Sources */,
+				541E16BB13BD693A00143FB3 /* ASIDataCompressor.m in Sources */,
+				541E16BC13BD693A00143FB3 /* ASIDataDecompressor.m in Sources */,
+				541E16BD13BD693A00143FB3 /* ASIDownloadCache.m in Sources */,
+				541E16BE13BD693A00143FB3 /* ASIFormDataRequest.m in Sources */,
+				541E16BF13BD693A00143FB3 /* ASIHTTPRequest.m in Sources */,
+				541E16C013BD693A00143FB3 /* ASIInputStream.m in Sources */,
+				541E16C113BD693A00143FB3 /* ASINetworkQueue.m in Sources */,
+				541E16E113BD693A00143FB3 /* Reachability.m in Sources */,
+				541E172813BD773D00143FB3 /* HelloTest.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		541E0D3713BC6C5600143FB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541E0D3813BC6C5600143FB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		541E0D4413BC6C5600143FB3 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541E0D4513BC6C5600143FB3 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		541E0D4B13BC6C5600143FB3 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541E0D4C13BC6C5600143FB3 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		541E0D4E13BC6C5600143FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/protobuf-current/src";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		541E0D4F13BC6C5600143FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/protobuf-current/src";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		541E0D5113BC6C5600143FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/protobuf-config",
+					"$(SRCROOT)/protobuf-current/src",
+				);
+				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lgcov",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		541E0D5213BC6C5600143FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/protobuf-config",
+					"$(SRCROOT)/protobuf-current/src",
+				);
+				INFOPLIST_FILE = "ProtoRPCIPhoneTestClient/ProtoRPCIPhoneTestClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lgcov",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541E0D2413BC6C5600143FB3 /* Build configuration list for PBXProject "ProtoRPCIPhoneTestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541E0D4E13BC6C5600143FB3 /* Debug */,
+				541E0D4F13BC6C5600143FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541E0D5013BC6C5600143FB3 /* Build configuration list for PBXNativeTarget "ProtoRPCIPhoneTestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541E0D5113BC6C5600143FB3 /* Debug */,
+				541E0D5213BC6C5600143FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 541E0D2113BC6C5600143FB3 /* Project object */;
+}
